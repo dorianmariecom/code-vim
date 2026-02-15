@@ -14,7 +14,19 @@ Then run:
 :PlugInstall
 ```
 
+## Color Scheme
+
+This plugin includes a light color scheme tuned for `code` files with explicit interpolation highlighting inside strings.
+
+Add to your vimrc:
+
+```vim
+syntax on
+colorscheme code_light
+```
+
 ## Included
 
 - `ftdetect/code.vim` -> sets `filetype=code` for `*.code`
 - `syntax/code.vim` -> syntax highlighting rules
+- `colors/code_light.vim` -> light color scheme (including string interpolation styling)
