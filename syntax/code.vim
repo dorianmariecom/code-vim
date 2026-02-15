@@ -68,8 +68,11 @@ syn match codeOperator /&&/
 syn match codeOperator /[+\-*\/%&|^~!<>?:=.×÷]/
 syn match codeDelimiter /[(){}\[\],]/
 
-" Generic identifier style (function-like names)
-syn match codeIdentifier /\<[A-Za-z_][A-Za-z0-9_]*[!?]\?\>/
+" Identifier families
+syn match codeClass /\<[A-Z][A-Za-z0-9_]*\>/
+syn match codeVariable /\<[a-z_][A-Za-z0-9_]*\>\ze\s*=/
+syn match codeMember /\.\zs[a-z_][A-Za-z0-9_]*[!?]\?\>/
+syn match codeFunction /\<[a-z_][A-Za-z0-9_]*[!?]\?\>\ze\s*(/
 
 hi def link codeComment Comment
 hi def link codeString String
@@ -85,6 +88,9 @@ hi def link codeBoolean Boolean
 hi def link codeNothing Constant
 hi def link codeOperator Operator
 hi def link codeDelimiter Delimiter
-hi def link codeIdentifier Identifier
+hi def link codeClass Type
+hi def link codeVariable Identifier
+hi def link codeMember Function
+hi def link codeFunction Function
 
 let b:current_syntax = 'code'

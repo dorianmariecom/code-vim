@@ -17,6 +17,6 @@ Then run:
 ## Included
 
 - `ftdetect/code.vim` -> sets `filetype=code` for `*.code`
-- `ftplugin/code.vim` -> applies a light theme for `code` buffers (no global colorscheme needed)
+- `ftplugin/code.vim` -> applies a light theme for `code` buffers (classes bold, assigned variables black, richer token colors)
 - `syntax/code.vim` -> syntax highlighting rules
 - `colors/code_light.vim` -> optional global light color scheme

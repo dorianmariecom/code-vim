@@ -14,7 +14,10 @@ hi codeSymbol        ctermfg=91 guifg=#7e22ce
 hi codeNumber        ctermfg=62 guifg=#4f46e5
 hi codeBoolean       ctermfg=62 guifg=#4f46e5
 hi codeNothing       ctermfg=62 guifg=#6d28d9
-hi codeIdentifier    ctermfg=31 guifg=#0891b2
+hi codeClass         ctermfg=25 gui=bold guifg=#1d4ed8
+hi codeVariable      ctermfg=232 guifg=#111827
+hi codeMember        ctermfg=37 guifg=#0f766e
+hi codeFunction      ctermfg=31 gui=bold guifg=#0369a1
 hi codeOperator      ctermfg=238 guifg=#374151
 hi codeOperatorWord  ctermfg=238 guifg=#374151
 hi codeDelimiter     ctermfg=239 guifg=#4b5563
