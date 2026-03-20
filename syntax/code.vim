@@ -21,6 +21,7 @@ syn match codeInterpolation /{[^}]*}/ contained
 
 " Symbols (:name)
 syn match codeSymbol /:[^[:space:],=:{}\[\]().'"|&<>*][^[:space:],=:{}\[\]().'"|&<>*]*/
+syn match codeLabel /\<[A-Za-z_][A-Za-z0-9_!?]*\>\ze\s*:/
 
 " Numbers
 syn match codeNumber /\<0[xX][0-9A-Fa-f]\(_*[0-9A-Fa-f]\)*\>/
@@ -79,6 +80,7 @@ hi def link codeString String
 hi def link codeEscape SpecialChar
 hi def link codeInterpolation Special
 hi def link codeSymbol Constant
+hi def link codeLabel Identifier
 hi def link codeNumber Number
 hi def link codeConditional Conditional
 hi def link codeRepeat Repeat
