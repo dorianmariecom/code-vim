@@ -11,6 +11,7 @@ hi codeString        ctermfg=29 guifg=#047857
 hi codeEscape        ctermfg=95 guifg=#a16207
 hi codeInterpolation ctermfg=91 gui=bold guifg=#a21caf
 hi codeSymbol        ctermfg=91 guifg=#7e22ce
+hi codeLabel         ctermfg=232 guifg=#111827
 hi codeNumber        ctermfg=62 guifg=#4f46e5
 hi codeBoolean       ctermfg=62 guifg=#4f46e5
 hi codeNothing       ctermfg=62 guifg=#6d28d9

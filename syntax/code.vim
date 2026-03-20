@@ -21,7 +21,6 @@ syn match codeInterpolation /{[^}]*}/ contained
 
 " Symbols (:name)
 syn match codeSymbol /:[^[:space:],=:{}\[\]().'"|&<>*][^[:space:],=:{}\[\]().'"|&<>*]*/
-syn match codeLabel /\<[A-Za-z_][A-Za-z0-9_!?]*\>\ze\s*:/
 
 " Numbers
 syn match codeNumber /\<0[xX][0-9A-Fa-f]\(_*[0-9A-Fa-f]\)*\>/
@@ -31,12 +30,13 @@ syn match codeNumber /\<[0-9]\(_*[0-9]\)*\.[0-9]\(_*[0-9]\)*\([eE][0-9]\(_*[0-9]
 syn match codeNumber /\<[0-9]\(_*[0-9]\)*\([eE][0-9]\(_*[0-9]\)*\)\?\>/
 
 " Keywords and literals
-syn keyword codeConditional if unless elsif elsunless else
-syn keyword codeRepeat while until loop
-syn keyword codeKeyword do begin end rescue
-syn keyword codeOperatorWord and or not
-syn keyword codeBoolean true false
-syn keyword codeNothing nothing
+syn match codeConditional /\<\(if\|unless\|elsif\|elsunless\|else\)\>\%(\s*:\)\@!/
+syn match codeRepeat /\<\(while\|until\|loop\)\>\%(\s*:\)\@!/
+syn match codeKeyword /\<\(do\|begin\|end\|rescue\)\>\%(\s*:\)\@!/
+syn match codeOperatorWord /\<\(and\|or\|not\)\>\%(\s*:\)\@!/
+syn match codeBoolean /\<\(true\|false\)\>\%(\s*:\)\@!/
+syn match codeNothing /\<nothing\>\%(\s*:\)\@!/
+syn match codeLabel /\<[A-Za-z_][A-Za-z0-9_!?]*\>\ze\s*:/
 
 " Operators and punctuation
 syn match codeOperator /||=/
